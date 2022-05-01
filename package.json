@@ -1,0 +1,16 @@
+{
+    "name": "template-app",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "initiate": "npm install && cd ./frontend && npm install && cd ../backend && npm install",
+        "start": "concurrently --kill-others \"npm run backend\" \"npm run frontend\"",
+        "frontend": "cd ./frontend && npm run dev",
+        "backend": "cd ./backend && npm start"
+    },
+    "author": "Trip1eLift",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^7.1.0"
+    }
+}

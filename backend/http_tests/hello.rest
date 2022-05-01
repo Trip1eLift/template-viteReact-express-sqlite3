@@ -1,0 +1,6 @@
+GET http://localhost:8080/hello
+content-type: application/json
+
+{
+    "data": "hello"
+}
